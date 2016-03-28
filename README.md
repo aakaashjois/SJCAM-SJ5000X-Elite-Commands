@@ -1,10 +1,11 @@
-# SJCAM5000 COMMANDS
+# SJCAM5000X Elite COMMANDS
 
 Base URL: http://192.168.1.254/
 
 ## Modes:
 - **Photo:** http://192.168.1.254/3001&par=0
 - **Video:** http://192.168.1.254/3001&par=1
+- **Replay** http://192.168.1.254/3001&par=2 Could be PC Camera.
 - **Video Time Lapse:** http://192.168.1.254/3001&par=3
 - **Photo Time Lapse:** http://192.168.1.254/3001&par=4
 
@@ -20,7 +21,7 @@ Resolution | Command
 2M | http://192.168.1.254/1002&par=5
 VGA | http://192.168.1.254/1002&par=6
 1.3M | http://192.168.1.254/1002&par=7
-14M | http://192.168.1.254/1002&par=8
+14M | http://192.168.1.254/1002&par=8 Does not work for SJ5000X Elite
 
 ## Video Resolution:
 
@@ -35,9 +36,11 @@ Resolution | Command
 
 ## Live Preview:
 rtsp://192.168.1.254/sjcam.mov
+
 RTSP does not need any keep alive packets.
 - Android Media Player gives 5s lag
 - Vitamio gives about 10s lag
+- Implementing VLC
 
 ## Photo TimeLapse Capture Interval:
 
@@ -146,7 +149,7 @@ http://192.168.1.254/3003&str=SSID_here
 http://192.168.1.254/3005&str/YYYY-MM-DD
 
 ## Set Time:
-http://192.168.1.254/3006&str/HH-MM-SS
+http://192.168.1.254/3006&str/HH:MM:SS
 
 ## Reset Settings to Default:
 http://192.168.1.254/3011
@@ -178,7 +181,6 @@ http://192.168.1.254/3018
 - http://192.168.1.254/1008
 - http://192.168.1.254/1009
 - http://192.168.1.254/1011
-- http://192.168.1.254/2006
 - http://192.168.1.254/2010
 - http://192.168.1.254/2013
 - http://192.168.1.254/2014
@@ -192,7 +194,6 @@ http://192.168.1.254/3018
 - http://192.168.1.254/3023
 - http://192.168.1.254/3024
 - http://192.168.1.254/3028
-- http://192.168.1.254/3029
 - http://192.168.1.254/3030
 - http://192.168.1.254/4001
 - http://192.168.1.254/4002
@@ -207,14 +208,13 @@ http://192.168.1.254/3018
 - http://192.168.1.254/3022
 - http://192.168.1.254/3023
 - http://192.168.1.254/3024
-- http://192.168.1.254/3030
 - http://192.168.1.254/9002
 
-  Battery Value 0/1/2/3/4/5
+  Battery Value 0(Full)/1(75%)/2(50%)/3(25%)/4(Low Battery)/5(Charger)
 
 - http://192.168.1.254/3016
 
-  Give Status = 1
+  Gives Status = 1
 
 - http://192.168.1.254/3027
 
@@ -222,4 +222,16 @@ http://192.168.1.254/3018
 
 - http://192.168.1.254/3012
 
-  Gives a \<String\>660\</String\> Output
+  Gives a \<String\>660\</String\> Firmware Number
+  
+- http://192.168.1.254/3030
+
+  Returns the path to the Firmware File
+  
+- http://192.168.1.254/3029
+  
+  Returns \<String\>http://115.29.201.46:8020/download/filedesc.xml \</String\>
+
+- http://192.168.1.254/2006
+
+  Enable Motion Detection
