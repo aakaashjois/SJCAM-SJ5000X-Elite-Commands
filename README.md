@@ -174,6 +174,13 @@ http://192.168.1.254/?custom=1&cmd=3018
 ## Snap picture:
 http://192.168.1.254/?custom=1&cmd=1001
 
+## Start/stop video recording:
+
+  Action | Command
+  -----|--------
+  Stop | http://192.168.1.254/?custom=1&cmd=2001&par=0
+  Start | http://192.168.1.254/?custom=1&cmd=2001&par=1
+  
 ## Video recording status:
 http://192.168.1.254/?custom=1&cmd=2016
 
