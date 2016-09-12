@@ -37,11 +37,6 @@ Resolution | Command
 ## Live Preview:
 rtsp://192.168.1.254/sjcam.mov
 
-RTSP does not need any keep alive packets.
-- Android Media Player gives 5s lag
-- Vitamio gives about 10s lag
-- Implementing VLC
-
 ## Photo TimeLapse Capture Interval:
 
 Interval | Command
