@@ -176,6 +176,12 @@ http://192.168.1.254/?custom=1&cmd=3013
 ## Check Devices Connected Via WiFi:
 http://192.168.1.254/?custom=1&cmd=3018
 
+## Snap picture:
+http://192.168.1.254/?custom=1&cmd=1001
+
+## Video recording status:
+http://192.168.1.254/?custom=1&cmd=2016
+
 ## Unknown Commands
 - http://192.168.1.254/?custom=1&cmd=1006
 - http://192.168.1.254/?custom=1&cmd=1008
@@ -185,7 +191,6 @@ http://192.168.1.254/?custom=1&cmd=3018
 - http://192.168.1.254/?custom=1&cmd=2013
 - http://192.168.1.254/?custom=1&cmd=2014
 - http://192.168.1.254/?custom=1&cmd=2015
-- http://192.168.1.254/?custom=1&cmd=2016
 - http://192.168.1.254/?custom=1&cmd=3030
 - http://192.168.1.254/?custom=1&cmd=3008
 - http://192.168.1.254/?custom=1&cmd=3019
