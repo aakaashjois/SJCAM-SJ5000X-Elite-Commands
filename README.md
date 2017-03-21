@@ -1,3 +1,5 @@
+## I sold my SJCAM SJ5000X and I will be unable to update this project anymore.
+
 # SJCAM5000X Elite COMMANDS
 
 Base URL: http://192.168.1.254/
