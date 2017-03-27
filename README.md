@@ -186,6 +186,18 @@ http://192.168.1.254/?custom=1&cmd=1001
 ## Video recording status:
 http://192.168.1.254/?custom=1&cmd=2016
 
+## Enable Motion Detection
+http://192.168.1.254/?custom=1&cmd=2006
+
+## Returns the path to the Firmware File
+http://192.168.1.254/?custom=1&cmd=3030
+
+## Gives a \<String\>660\</String\> Firmware Number
+http://192.168.1.254/?custom=1&cmd=3012
+
+## Battery Value 0(Full)/1(75%)/2(50%)/3(25%)/4(Low Battery)/5(Charger)
+http://192.168.1.254/?custom=1&cmd=3016
+
 ## Unknown Commands
 - http://192.168.1.254/?custom=1&cmd=1006
 - http://192.168.1.254/?custom=1&cmd=1008
@@ -219,28 +231,12 @@ http://192.168.1.254/?custom=1&cmd=2016
 - http://192.168.1.254/?custom=1&cmd=3024
 - http://192.168.1.254/?custom=1&cmd=9002
 
-  Battery Value 0(Full)/1(75%)/2(50%)/3(25%)/4(Low Battery)/5(Charger)
-
-- http://192.168.1.254/?custom=1&cmd=3016
-
   Gives Status = 1
-
+  
 - http://192.168.1.254/?custom=1&cmd=3027
 
   Generates Random \<Value\>
-
-- http://192.168.1.254/?custom=1&cmd=3012
-
-  Gives a \<String\>660\</String\> Firmware Number
-
-- http://192.168.1.254/?custom=1&cmd=3030
-
-  Returns the path to the Firmware File
-
+  
 - http://192.168.1.254/?custom=1&cmd=3029
 
   Returns \<String\>http://115.29.201.46:8020/download/filedesc.xml \</String\>
-
-- http://192.168.1.254/?custom=1&cmd=2006
-
-  Enable Motion Detection
